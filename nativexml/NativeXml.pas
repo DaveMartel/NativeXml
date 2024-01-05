@@ -67,7 +67,11 @@ unit NativeXml;
 
 interface
 
-{$i simdesign.inc}
+{ $ i simdesign.inc}
+//We have made our own copy of the include file. This means we can leave that alone
+//  and just make our own changes. We can keep up theprevious style, or we could just simplify it
+//  sindce we will never support anything pre-Delphi 11, and not FreePascal/Lazarus at this point
+{$i EAG.inc}
 
 // define if you want to include the Graphics unit, and graphics-related properties.
 {.$define USEGRAPHICS}
